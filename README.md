@@ -26,11 +26,12 @@
   | 60          | 14.5%    | 5
   | 50         | 17%       | 0
 7. How stable is the period?
-
+    It is not very stable, for 150ms period, the stdev. is around 20ms. 
 8. Try launching something like vi. How stable is the period?
-
+    It is getting worse. 
 9. Try cleaning up togglegpio.sh and removing unneeded lines. Does it impact the period?
-
+    The period becomes 243 ms, which is a 7ms better than
 10. Togglegpio.sh uses bash (first line in file). Try using sh. Is the period shorter?
-
+    It becomes better, because the period is 20ms lower than bash run at 100ms sleep time.
 11. What's the shortest period you can get?
+    30ms using sh
