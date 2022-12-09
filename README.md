@@ -15,13 +15,16 @@
 4. Why do they differ?
     Because Bash cannot run code very fast. 
 5. Run htop and see how much processor you are using.
-  30% to 40%
+    3%
 6. Try different values for the sleep time (2nd argument). What's the shortest period you can get? Make a table of the fastest values you try and the corresponding period and processor usage. Try using markdown tables: https://www.markdownguide.org/extended-syntax/#tables
 
-  | Syntax      | Description |
-  | ----------- | ----------- |
-  | Header      | Title       |
-  | Paragraph   | Text        |
+  | Period      | Processor usage | Sleep Time
+  | ----------- | ----------- | ----------- |
+  | 250        | 3%       | 100
+  | 150        | 6%       | 50
+  | 70        | 12%       | 10
+  | 60          | 14.5%    | 5
+  | 50         | 17%       | 0
 7. How stable is the period?
 
 8. Try launching something like vi. How stable is the period?
