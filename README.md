@@ -37,7 +37,7 @@
     30ms using sh
 > Comparison
 
- | | Shell      | Python | C | C w/o usleep
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Frequency | 20Hz    | 15kHz | 5.3kHz | 100kHz
-  | CPU usage | 18%     | 97% | 59% | 98%
+ |              | Shell       | Python | C          | C w/o usleep | Python gpiod | C gpiod| 
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Frequency | 20Hz          | 15kHz       | 5.3kHz      | 100kHz      | 56kHz      | 260kHz
+  | CPU usage | 18%           | 97%         | 59%         | 98%         | 97%         | 97%
