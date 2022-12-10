@@ -35,3 +35,9 @@
     It becomes better, because the period is 20ms lower than bash run at 100ms sleep time.
 11. What's the shortest period you can get?
     30ms using sh
+> Comparison
+
+ | | Shell      | Python | C
+  | ----------- | ----------- | ----------- | ----------- |
+  | Frequency | 20Hz    | 15kHz | 
+  | CPU usage | 18%     | 97% | 
