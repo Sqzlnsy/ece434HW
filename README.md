@@ -39,5 +39,5 @@
 
  | | Shell      | Python | C
   | ----------- | ----------- | ----------- | ----------- |
-  | Frequency | 20Hz    | 15kHz | 
-  | CPU usage | 18%     | 97% | 
+  | Frequency | 20Hz    | 15kHz | 5.3kHz
+  | CPU usage | 18%     | 97% | 59%
