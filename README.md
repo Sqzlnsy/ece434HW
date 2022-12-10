@@ -37,7 +37,7 @@
     30ms using sh
 > Comparison
 
- | | Shell      | Python | C
-  | ----------- | ----------- | ----------- | ----------- |
-  | Frequency | 20Hz    | 15kHz | 5.3kHz
-  | CPU usage | 18%     | 97% | 59%
+ | | Shell      | Python | C | C w/o usleep
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Frequency | 20Hz    | 15kHz | 5.3kHz | 100kHz
+  | CPU usage | 18%     | 97% | 59% | 98%
