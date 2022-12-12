@@ -42,7 +42,7 @@ while (1):
     vals=lines.get_values()
     #print(vals)
     cur[0]=cur[0]+vals[0]-vals[1]
-    cur[1]=cur[1]+2*(vals[2]-(not vals[3]))
+    cur[1]=cur[1]+2*(vals[2]-vals[3])
     if cur[0]>ylen: cur[0]=ylen
     if cur[1]>2*xlen: cur[1]=2*xlen
     if cur[0]<1: cur[0]=1
