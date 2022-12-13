@@ -16,8 +16,8 @@ import sys
 
 CONSUMER='getset'
 CHIP='1'
-getoffsets=[15, 12, 14, 29] # P8_16
-setoffests=[28, 16, 17, 13] # P9_14
+getoffsets=[15, 12, 14, 29] # P8_15 P8_12 P8_16 P8_26
+setoffests=[28, 16, 17, 13] # P9_12 P9_15 P9_23 P8_11
 
 def print_event(event):
     if event.type == gpiod.LineEvent.RISING_EDGE:

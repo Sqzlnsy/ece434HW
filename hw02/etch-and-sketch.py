@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Jason Su @ 12/10/2022
 import curses
 import time
 import array as arr 
