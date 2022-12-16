@@ -35,6 +35,8 @@
   | Frequency | 20Hz          | 15kHz       | 5.3kHz      | 100kHz      | 56kHz      | 260kHz
   | CPU usage | 18%           | 97%         | 59%         | 98%         | 97%         | 97%
 
+## ssh port changed to 2022 and fail2ban enabled
+
 ## Programs
 1. etch-and-sketch.py  
     Up "P8_15"; Down "P8_12"; Right "P8_16"; Left "P8_26"
