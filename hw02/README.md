@@ -35,9 +35,29 @@
   | Frequency | 20Hz          | 15kHz       | 5.3kHz      | 100kHz      | 56kHz      | 260kHz
   | CPU usage | 18%           | 97%         | 59%         | 98%         | 97%         | 97%
 
+## > ssh port changed to 2022 and fail2ban enabled
+
 ## Programs
 1. etch-and-sketch.py  
     Up "P8_15"; Down "P8_12"; Right "P8_16"; Left "P8_26"
 2. getsetEvent.py  
     
 3. togglegpio.py    toggle P9_12
+
+
+# hw02 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  2/2 | Buttons and LEDs 
+|  8/8 | Etch-a-Sketch works
+|      | Measuring a gpio pin on an Oscilloscope 
+|  2/2 | Questions answered
+|  4/4 | Table complete
+|  2/2 | gpiod
+|      | Security
+|  0/1 | ssh port 
+|  0/1 | fail2ban
+| 18/20   | **Total**
+
+Looks good, but ssh port change and fail2ban are missiing.
