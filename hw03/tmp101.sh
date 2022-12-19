@@ -1,4 +1,5 @@
 #!/bin/sh
+#Jason Su 12/18/2022
 i2cbus=$1
 shift
 while([ "1" = "1" ]) do
