@@ -8,7 +8,7 @@ BACKGROUND=/home/debian/exercises/displays/demo/boris.png
 convert -fill blue -font Times-Roman -pointsize 24 \
      -size $SIZE \
      label:'ImageMagick\nBoris.png\nby Jason Su' \
-     -draw "text 0,200 '01/08/2022'" \
+     -draw "text 0,200 '01/08/2023'" \
      $TMP_FILE
 composite -geometry $SIZE+150 $BACKGROUND $TMP_FILE $TMP_FILE   
 
