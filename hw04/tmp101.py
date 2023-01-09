@@ -5,15 +5,15 @@ import os
 
 tmp1='0049'
 tmp2='004a'
-i2cPath="/sys/class/i2c-adapter/i2c-2"
-if (not os.path.exists(i2cPath+"/2-"+tmp1)):
+i2cPath="/sys/class/i2c-adapter/i2c-1"
+if (not os.path.exists(i2cPath+"/1-"+tmp1)):
     print("tmp101 at " + tmp1 + " has not config yet.")
 
-if (not os.path.exists(i2cPath+"/2-"+tmp2)):
+if (not os.path.exists(i2cPath+"/1-"+tmp2)):
     print("tmp101 at " + tmp2 + " has not config yet.")
 
-f1=open(i2cPath+'/2-'+tmp1+"/hwmon/hwmon0/temp1_input", "r")
-f2=open(i2cPath+'/2-'+tmp2+"/hwmon/hwmon1/temp1_input", "r")
+f1=open(i2cPath+'/1-'+tmp1+"/hwmon/hwmon0/temp1_input", "r")
+f2=open(i2cPath+'/1-'+tmp2+"/hwmon/hwmon1/temp1_input", "r")
 
 try:
   while(True):

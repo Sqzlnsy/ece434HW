@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) {
     // Set USR2 and USR3 to be an output pin
     reg = *gpio_oe_addr;
     printf("GPIO1 configuration: %X\n", reg);
-    reg &= ~(USR3 | USR2);       // Set USR3 bit to 0
+    reg &= ~(USR3 | USR1);       // Set USR3 bit to 0
     reg |= (1<<16);              // Set GPIO48 bit to 1
     *gpio_oe_addr = reg;
     printf("GPIO1 configuration: %X\n", reg);
@@ -80,11 +80,11 @@ int main(int argc, char *argv[]) {
         printf("USR2:");
         if (reg!=0){
             reg = *gpio_dataout_addr1;
-            reg = reg | USR2;
+            reg = reg | USR1;
             printf("on  |   ");
         } else {
             reg = *gpio_dataout_addr1;
-            reg &= ~USR2;
+            reg &= ~USR1;
             printf("off  |   ");
         }
         *gpio_dataout_addr1=reg;
@@ -95,11 +95,11 @@ int main(int argc, char *argv[]) {
         if (reg!=0){
             reg = *gpio_dataout_addr1;
             reg = reg | USR3;
-            printf("on\r");
+            printf("on  \r");
         } else {
             reg = *gpio_dataout_addr1;
             reg &= ~USR3;
-            printf("off\r");
+            printf("off  \r");
         }
         *gpio_dataout_addr1=reg;
     };

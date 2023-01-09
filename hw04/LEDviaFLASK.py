@@ -8,7 +8,7 @@ import time
 import numpy as np 
 
 app = Flask(__name__)
-bus = smbus.SMBus(2)  
+bus = smbus.SMBus(1)  
 LEDM = 0x70        
 
 xlen=8
@@ -87,4 +87,4 @@ def move(action):
 
 
 if __name__ == "__main__":
-   app.run(host='0.0.0.0', port=8081, debug=True)
+   app.run(host='0.0.0.0', port=8081)

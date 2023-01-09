@@ -10,5 +10,7 @@ convert -fill blue -font Times-Roman -pointsize 24 \
      label:'ImageMagick\nBoris.png\nby Jason Su' \
      -draw "text 0,200 '01/08/2022'" \
      $TMP_FILE
-composite -geometry $SIZE+150 $BACKGROUND $TMP_FILE $TMP_FILE     
+composite -geometry $SIZE+150 $BACKGROUND $TMP_FILE $TMP_FILE   
+
+convert $TMP_FILE -rotate 90 $TMP_FILE
 sudo fbi -noverbose -T 1 $TMP_FILE
