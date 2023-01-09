@@ -1,5 +1,5 @@
 # Here's how to use imagemagick to display text
-# Make a blank image
+# Jason Su @ 01/09/2023
 SIZE=320x240
 TMP_FILE=/tmp/frame.png
 BACKGROUND=/home/debian/exercises/displays/demo/boris.png
