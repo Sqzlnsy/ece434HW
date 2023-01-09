@@ -1,4 +1,4 @@
-# Homework 03
+# Homework 04
 1. GPIO.o GPIO_mmap.c use pin P9_15 and P9_41 to toggle USR3 and USR1
 2. gpioThru has a delay of 320ns
 3. Toggle_mmp.c toggles GPIO49 as fast as it can. It is a lot faster, around 1.34Mhz with 110KHz std.  
