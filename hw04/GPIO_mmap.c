@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) {
     // Set USR2 and USR3 to be an output pin
     reg = *gpio_oe_addr;
     printf("GPIO1 configuration: %X\n", reg);
-    reg &= ~(USR3 | USR1);       // Set USR3 bit to 0
+    reg &= ~(USR3 | USR1);       // Set USR3 and USE1 bit to 0
     reg |= (1<<16);              // Set GPIO48 bit to 1
     *gpio_oe_addr = reg;
     printf("GPIO1 configuration: %X\n", reg);
