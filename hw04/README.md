@@ -6,3 +6,19 @@
 5. LEDviaFLASK.py holds a website to control the LED Matrix
 6. text.sh uses imagemagick to show a text and an image (rotated by 90 degree) on the LCD display
 7. mplayer can play the download.mp4
+
+
+# hw04 grading
+
+| Points      | Description | |
+| ----------- | ----------- | - |
+|  0/2 | Memory map | *Missing*
+|  4/4 | mmap()
+|  4/4 | i2c via Kernel
+|  5/5 | Etch-a-Sketch via flask
+|  5/5 | LCD display
+|      | Extras
+| 18/20 | **Total**
+
+*My comments are in italics. --may*
+
