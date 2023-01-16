@@ -41,3 +41,8 @@
   | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Frequency | 20Hz          | 15kHz       | 5.3kHz      | 100kHz      | 56kHz      | 260kHz
   | CPU usage | 18%           | 97%         | 59%         | 98%         | 97%         | 97%
+  
+  
+debian@BeagleBone:~/exploringBB/chp16/hello$ sudo insmod hello.ko
+debian@BeagleBone:~/exploringBB/chp16/hello$ dmesg -H | tail -1
+[Jan16 02:49] EBB: Hello world from the Beagle LKM!
