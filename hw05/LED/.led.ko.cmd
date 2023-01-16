@@ -1,0 +1,1 @@
+cmd_/home/debian/ece434HW/hw05/LED/led.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/debian/ece434HW/hw05/LED/led.ko /home/debian/ece434HW/hw05/LED/led.o /home/debian/ece434HW/hw05/LED/led.mod.o;  true
