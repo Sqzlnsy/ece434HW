@@ -1,5 +1,5 @@
 # Homework 05
-1. EBC_make exercises done
+1. EBC_make exercises done  
   Target = app.o  
   Dependency = app.c  
   Command = gcc  
