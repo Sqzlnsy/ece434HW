@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # Jason Su @ 01/16/2023
+# Etch-a-sketch controlled by an IMU. Flip the IMU to clear the LED Matrix
 import curses
 import array as arr 
 import smbus
