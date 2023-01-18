@@ -12,3 +12,19 @@
 6. When the new adxl345 is added, some files are generated in iio:device1, including the raw data, calibration, sample rate and so on 
 7. Etch-a-sketch is controlled by IMU readings.
 8. LED/LED.c toggles P9_12 and P9_15 at 1Hz and 2Hz.   
+
+# hw05 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  0/0 | Project 
+|  2/2 | Makefile
+|  6/6 | Kernel Source
+|  4/4 | Etch-a-Sketch
+|  8/8 | Kernel Modules: hello, ebbchar, gpio_test, led
+|  4/4 | Extras - Blink at different rates
+| 24/20 | **Total**
+
+*My comments are in italics. --may*
+
+*Looks good.*
