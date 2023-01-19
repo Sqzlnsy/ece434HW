@@ -1,3 +1,4 @@
+# hw06
 1. Where does Julia Cartwright work?
   National Instrument  
 2. What is PREEMT_RT? Hint: Google it.
@@ -21,4 +22,6 @@
 11. Why can the External event in Figure 4 start sooner?
   Because very few codes run in the hardirq, the external event thread can be woken up as long as the small portion of code is done. 
   
-# RT vs non-RT
+## RT vs non-RT
+![plot](./cyclictest(1).png)  
+RT has a bounded latency of around 150us. I "make" a couple of modules as load when generating the histogram.
