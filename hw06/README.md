@@ -23,5 +23,8 @@
   Because very few codes run in the hardirq, the external event thread can be woken up as long as the small portion of code is done. 
   
 ## RT vs non-RT
-![plot](./cyclictest(1).png)  
-RT has a bounded latency of around 150us. I "make" a couple of modules as load when generating the histogram.
+### Without load
+![plot](./cyclictest.png)  
+### With load
+![plot](./cyclictestLoad.png)  
+RT has a bounded latency of around 150us, and the difference are more obvious when there are other things running. I run the extended Kalman filte code processing simulated data as load when generating the histogram.
