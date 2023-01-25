@@ -28,3 +28,16 @@
 ### With load
 ![plot](./cyclictestLoad.png)  
 RT has a bounded latency of around 150us, and the difference are more obvious when there are other things running. I run the extended Kalman filte code processing simulated data as load when generating the histogram.
+
+
+# hw06 grading
+
+| Points      | Description | |
+| ----------- | ----------- |-|
+|  2/2 | Project | *Telemetry for Vehicles*
+|  4/5 | Questions | *Mainline is the main kernel tree.*
+|  4/4 | PREEMPT_RT
+|  2/2 | Plots to 500 us
+|  5/5 | Plots - Heavy/Light load
+|  2/2 | Extras
+| 19/20 | **Total**
