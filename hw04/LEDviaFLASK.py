@@ -6,6 +6,7 @@ import array as arr
 import smbus
 import time
 import numpy as np 
+import os
 
 app = Flask(__name__)
 bus = smbus.SMBus(1)  
