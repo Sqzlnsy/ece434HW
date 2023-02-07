@@ -22,6 +22,7 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 import time, sys
+import os
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
@@ -29,6 +30,15 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 # The ID and range of a sample spreadsheet.
 SAMPLE_SPREADSHEET_ID = '1asFw9GoAoRBbMQnt-QN3eEDT9FBEG2nq19e1OhVP6-A'
 SAMPLE_RANGE_NAME = 'A2'
+
+temp = {}
+w1_path="/sys/class/hwmon"
+if (not os.path.exists(w1_path)):
+    print("MAX31820 has not config yet.")
+
+f1=open(w1_path+"/hwmon0/temp1_input", "r")
+f2=open(w1_path+"/hwmon1/temp1_input", "r")
+f3=open(w1_path+"/hwmon2/temp1_input", "r")
 
 def main():
     """Shows basic usage of the Sheets API.
@@ -53,20 +63,33 @@ def main():
         # Save the credentials for the next run
         with open('token.pickle', 'wb') as token:
             pickle.dump(creds, token)
-
+    global service
     service = build('sheets', 'v4', credentials=creds)
-
-    # Call the Sheets API
-    sheet = service.spreadsheets()
-    values = [ [time.time()/60/60/24+ 25569 - 4/24, sys.argv[1], sys.argv[2]]]
-    body = {'values': values}
-    result = sheet.values().append(spreadsheetId=SAMPLE_SPREADSHEET_ID,
-                                range=SAMPLE_RANGE_NAME,
-                                valueInputOption='USER_ENTERED', 
-                                body=body
-                                ).execute()
-    print(result)
 
 if __name__ == '__main__':
     main()
+    try:
+        while(True):
+            f1.seek(0)
+            f2.seek(0)
+            f3.seek(0)
+            temp[0] = f1.read()[:-1]
+            temp[1] = f2.read()[:-1]
+            temp[2] = f3.read()[:-1]
+            print("Temperature: "+temp[0]+" | "+ temp[1]+" | "+ temp[2], end='\r')
+            # Call the Sheets API
+            sheet = service.spreadsheets()
+            values = [ [time.time()/60/60/24+ 25569 - 4/24, temp[0], temp[1], temp[2]]]
+            body = {'values': values}
+            result = sheet.values().append(spreadsheetId=SAMPLE_SPREADSHEET_ID,
+                                        range=SAMPLE_RANGE_NAME,
+                                        valueInputOption='USER_ENTERED', 
+                                        body=body
+                                        ).execute()
+            #print(result)
+            time.sleep(600)
+    except KeyboardInterrupt:
+        f1.close()
+        f2.close()
+        f3.close()
 # [END sheets_quickstart]
