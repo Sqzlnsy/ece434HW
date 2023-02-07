@@ -25,3 +25,14 @@ The highest freqency is 327kHz, and there is no jitter.
 ![alt text](MicrosoftTeams-image%20(15).png?raw=true "Title")
 
 
+# hw08 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+| 14/14 | PRU
+|  2/2 | Controlling the PWM Frequency - optional
+|  2/2 | Reading an Input at Regular Intervals - optional
+|  2/2 | Analog Wave Generator - optional
+| 22 | **Total**
+*Nice plots* +2
+*My comments are in italics. --may*
