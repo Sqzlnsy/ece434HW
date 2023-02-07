@@ -15,10 +15,13 @@ It is stable and the Std Dev is about 115kHz. It looks like sine wave.
 P9.31, P9.30, P9.29, P9.28  
 6. What’s the highest frequency you can get with four channels?  
 The highest freqency is 327kHz, and there is no jitter. 
+![alt text](MicrosoftTeams-image%20(16).png?raw=true "Title")
+![alt text](MicrosoftTeams-image%20(17).png?raw=true "Title")
 ### 5.9
 5. how fast the code can transfer the input to the output?  
 25.5ns
 ![alt text](MicrosoftTeams-image%20(14).png?raw=true "Title")
 ### 5.10
+![alt text](MicrosoftTeams-image%20(15).png?raw=true "Title")
 
 
